@@ -1,0 +1,44 @@
+@use '../util' as *;
+
+
+
+
+.cert,
+.consult,
+.leader {
+  color: var(--white);
+  margin-bottom: rem(40);
+
+  h2 {
+    font-size: rem(36);
+    line-height: 1.2;
+    margin-bottom: rem(14);
+  }
+
+  p {
+    font-size: rem(18);
+    line-height: 1.5;
+    margin-bottom: rem(12);
+  }
+
+  a {
+    color: var(--white);
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      font-weight: 700;
+    }
+  }
+}
+
+.inner-container {
+  width: 80%;
+  max-width: 1200px;
+  position: relative;
+
+  @include breakpoint-down(medium) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}

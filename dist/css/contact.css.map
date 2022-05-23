@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,IAAI,CAAJ,cAAI",
+    "sources": [
+        "../../app/scss/components/contact.scss"
+    ],
+    "names": [],
+    "file": "contact.css"
+}

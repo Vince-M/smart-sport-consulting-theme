@@ -1,0 +1,10 @@
+:root {
+  --darkBlue: hsl(203, 100%, 24%);
+  --lightBlue: hsl(192, 100%, 38%);
+  --darkGold: hsl(40, 76%, 50%);
+  --lightGold: hsl(40, 69%, 64%);
+  --aqua:  	hsl(185, 92%, 35%);
+  --black: hsl(0, 0%, 6%);
+  --white: hsl(0, 0%, 100%);
+}
+/*# sourceMappingURL=colors.css.map */

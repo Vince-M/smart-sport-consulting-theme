@@ -9,8 +9,6 @@ const terser = require('gulp-terser');
 const browsersync = require('browser-sync').create();
 
 
-
-
 // Sass Task
 function scssTask() {
   return src('app/scss/*.scss', { sourcemaps: true})
@@ -30,7 +28,7 @@ function jsTask() {
 // Browsersync
 function browserSyncServe(cb) {
   browsersync.init({
-    proxy: "http://gulptest.local/",
+    proxy: "http://smart-sport-consulting.local/",
     notify: {
       styles: {
         top: 'auto',
