@@ -4,13 +4,13 @@
     =================================================== -->
     <section class="hero feature-image" role="banner" data-type="background" data-speed="2">
       <div class="hero__headline">
-        <img class="hero__logo" src="img/indexHeroLogo_361x93.svg" alt="Smart Sport Logo" width="541">
+        <img class="hero__logo" src="<?php echo get_theme_file_uri('img/indexHeroLogo_361x93.svg'); ?>" alt="Smart Sport Logo" width="541">
         <div class="btn__hero">
           <a href="#">About Smart Sport</a>
         </div> <!-- btn__hero -->
       </div> <!-- hero__headline -->
 
-      <div style="background: url(./img/ssc_indexHero_1920x1080-min.jpg) no-repeat; background-position: center top;
+      <div style="background: url(<?php echo get_theme_file_uri( './img/ssc_indexHero_1920x1080-min.jpg' ) ?>) no-repeat; background-position: center top;
       background-size: cover; left: 50%; padding: 0; position: relative;-webkit-transform: translateX(-50%);transform: translateX(-50%);
       margin-top: 0px; margin-bottom: 0px; height: 100vh;overflow: hidden; clear: both;" >
       </div> <!-- hero jumbo-image -->
