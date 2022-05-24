@@ -44,24 +44,25 @@
 
     <!-- CUSTOM CONSULTING
     =================================================== -->
-      <section class="consult fullWidth fullWidth__section fullWidth__section--consultBkgd">
-        <div class="fullWidth__section--image fullWidth__section--consult"></div> 
-        <div class="fullWidth__section--textOuter">
-          <div class="inner-container">
-            
-              <div class="fullWidth__section--text">
-                <div class="fullWidth__section--innerWrapper fullWidth__section--consultText">
-                  <h2>Custom Consulting</h2>
-                  <p>Whether facing Executive turnover, volunteer shortages or simply having an ambition to build your enrollment, custom consulting engagements are available to assist you in meeting your unique organizational goals.</p>
-                  <div class="btn btn-learn">
-                    <a href="#">Learn about Custom Consulting</a>
-                  </div> <!-- btn btn-learn -->
-                </div> <!-- fullWidth__section--innerWrapper -->
-              </div> <!-- fullWidth__section--text -->
+    <section class="consult fullWidth fullWidth__section fullWidth__section--consultBkgd">
+      <div class="fullWidth__section--image fullWidth__section--consult"></div> 
+      <div class="fullWidth__section--textOuter">
+        <div class="inner-container">
+          
+            <div class="fullWidth__section--text">
+              <div class="fullWidth__section--innerWrapper fullWidth__section--consultText">
+                <h2>Custom Consulting</h2>
+                <p>Whether facing Executive turnover, volunteer shortages or simply having an ambition to build your enrollment, custom consulting engagements are available to assist you in meeting your unique organizational goals.</p>
+                <div class="btn btn-learn">
+                  <a href="#">Learn about Custom Consulting</a>
+                </div> <!-- btn btn-learn -->
+              </div> <!-- fullWidth__section--innerWrapper -->
+            </div> <!-- fullWidth__section--text -->
 
-          </div> <!-- inner-container -->
-        </div><!-- fullWidth__section--textOuter -->
-      </section><!-- fullWidth fullWidth__section fullWidth__section--consultBkgd -->
+        </div> <!-- inner-container -->
+      </div><!-- fullWidth__section--textOuter -->
+    </section><!-- fullWidth fullWidth__section fullWidth__section--consultBkgd -->
+    <!-- ============================================== -->
 
     <!-- LEADERSHIP DEVELOPMENT
     =================================================== -->
@@ -87,27 +88,27 @@
 
     <!-- NEWS / BLOG
     =================================================== -->
-      <section class="fullWidth fullWidth__section--blogs">
-        <div class="fullWidth__blogs--wrapper">
-          <div class="fullWidth__section--blog">
-            <img class="iconBlog" src="./img/blog_icon.svg" height="60" alt="blog icon">
-            <h2>Blog</h2>
-            <p>The culture of an organization is defined by its leadership – even in a volunteer -based organization.  <a href="#">Read more of this story</a></p>
-            <div class="moreBlog">
-              <a href="#">Explore more Blog stories </a>
-            </div> <!-- btn btn-events -->
-          </div> <!-- fullWidth__section--blog -->
+    <section class="fullWidth fullWidth__section--blogs">
+      <div class="fullWidth__blogs--wrapper">
+        <div class="fullWidth__section--blog">
+          <img class="iconBlog" src="./img/blog_icon.svg" height="60" alt="blog icon">
+          <h2>Blog</h2>
+          <p>The culture of an organization is defined by its leadership – even in a volunteer -based organization.  <a href="#">Read more of this story</a></p>
+          <div class="moreBlog">
+            <a href="#">Explore more Blog stories </a>
+          </div> <!-- btn btn-events -->
+        </div> <!-- fullWidth__section--blog -->
 
-          <div class="fullWidth__section--news">
-            <img class="iconNews" src="./img/news_icon.svg" height="60" alt="blog icon">
-            <h2>News</h2>
-            <p>The culture of an organization is defined by its leadership – even in a volunteer -based organization. <a href="#">Read more of this news item</a></p>
-            <div class="moreNews">
-              <a href="#">Explore more News stories</a>
-            </div> <!-- btn btn-forSale -->
-          </div> <!-- fullWidth__section--news -->
-        </div> <!-- container -->
-      </section>
+        <div class="fullWidth__section--news">
+          <img class="iconNews" src="./img/news_icon.svg" height="60" alt="blog icon">
+          <h2>News</h2>
+          <p>The culture of an organization is defined by its leadership – even in a volunteer -based organization. <a href="#">Read more of this news item</a></p>
+          <div class="moreNews">
+            <a href="#">Explore more News stories</a>
+          </div> <!-- btn btn-forSale -->
+        </div> <!-- fullWidth__section--news -->
+      </div> <!-- container -->
+    </section>
     <!-- ============================================== -->
 
 <?php get_footer(); ?>
