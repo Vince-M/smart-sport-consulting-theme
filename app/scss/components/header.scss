@@ -42,7 +42,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: var(--darkgreen80);
+    background-color: var(--darkBlue);
     z-index: 999;
 
     @include breakpoint-up (medium) {
@@ -68,7 +68,6 @@
     }
   }
 
-
   &__toggle { // Mobile menu toggle
     margin-right: 20px;
 
@@ -87,12 +86,28 @@
   }
 }
 
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus, 
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #ffffff;
+  background-color: #8dc63f;
+}
+
 .nav {
   height: auto;
   position: relative;
 
-  &__link {
-    color: var(--darkgreen);
+  ul {
+    list-style: none;
+    list-style-position: none;
+  }
+
+  ul li {
+    padding-left: 0;
+  }
+
+  &__link a {
+    color: var(--darkBlue);
     text-transform: uppercase;
     text-decoration: none;
     font-family: var(--font-heading);

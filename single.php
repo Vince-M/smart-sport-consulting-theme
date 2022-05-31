@@ -3,14 +3,11 @@
   <!-- HERO
   =================================================== -->
   <section class="hero feature-image" role="banner" data-type="background" data-speed="2">
-  <div class="container-fluid">
+  
       <section role="banner" data-type="background" data-speed="2">
-        <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-        <div class="hero__background" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-position: top; background-size: cover; " >
+      <div class="blog__feature--default hero__background"></div> 
         </div> <!-- hero jumbo-image -->
       </section><!-- .section -->
-    </div> <!-- container-fluid -->
-
   </section> <!-- hero feature-image -->
   <!-- ============================================== -->
 
@@ -37,7 +34,7 @@
   
   <!-- ============================================== -->
 
-    <!-- NEWS / BLOG
+  <!-- NEWS / BLOG
   =================================================== -->
   <section class="fullWidth fullWidth__section--blogs">
     <div class="fullWidth__blogs--wrapper">

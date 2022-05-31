@@ -31,12 +31,24 @@ body {
   }
 }
 
-.row {
-  padding: 0 rem(10);
+.content {
+  width: 80%;
+  margin: 0 auto rem(40);
+
+  &__columns {
+    margin-top: rem(48);
+  }
 }
 
-ol, ul {
-  list-style: none;
+.development {
+
+  &__intro {
+    margin-top: 0;
+  }
+}
+
+.row {
+  padding: 0 rem(10);
 }
 
 blockquote, q {
@@ -55,6 +67,22 @@ table {
 img {
   max-width: 100%;
 }
+
+ .consult-list,
+ .leadership-list,
+ .certification-list {
+  list-style-type: disc;
+  list-style-position: outside;
+  line-height: 1.5;
+  padding-left: rem(15);
+  margin: rem(16) 0 0 rem(40);
+}
+
+.consult-list li,
+ .leadership-list li,
+ .certification-list li {
+   margin-bottom: rem(14);
+ }
 
 a,
 a:visited,
@@ -98,6 +126,16 @@ a:hover {
   border: none;
   border-top: rem(2) solid var(--darkgreen);
   margin: 2.5rem 0;
+}
+
+.size-full {
+  margin-top: rem(30);
+  border-bottom: rem(1) solid var(--darkBlue);
+  padding-bottom: rem(20);
+}
+
+.size-large {
+  margin-top: rem(30);
 }
 
 
@@ -185,7 +223,7 @@ a:hover {
     &--blog,
     &--news {
       width: 45%;
-      padding-top: rem(100);
+      padding-top: rem(52);
       margin-bottom: rem(60);
 
       p {
@@ -324,6 +362,7 @@ a:hover {
     font-family: var(--font-heading);
     font-size: 2.5rem; // 40px
     font-weight: 500;
+    color: var(--white);
     letter-spacing: 0.0625rem; // 1px
     margin-bottom: 1.25rem; // 20px
 
@@ -341,15 +380,17 @@ a:hover {
 /* Icons
 /* -------------------------------------*/
 
-.iconBlog {
+.iconBlog,
+.iconNews {
   position: absolute;
-  top: rem(60);
+  // top: rem(60);
+}
+
+.iconBlog {
   right: rem(150);
 }
 
 .iconNews {
-  position: absolute;
-  top: rem(60);
   right: rem(25);
 
   @include breakpoint-down(small) {
@@ -387,6 +428,7 @@ a:hover {
 
   &__header {
     text-align: center;
+    padding: 0 rem(20);
 
     &--name {
       font-weight: 700;
@@ -453,7 +495,8 @@ a:hover {
     // }
 
     p {
-      color: var(--darkgreen);
+      color: var(--darkBlue);
+      margin-top: 0;
     }
   }
 
