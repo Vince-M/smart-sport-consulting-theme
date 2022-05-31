@@ -89,31 +89,6 @@
     </section> <!-- leadership full__width fullWidth__section fullWidth__section--reverse -->
     <!-- ============================================== -->
 
-      <!-- NEWS / BLOG
-  =================================================== -->
-  <section class="fullWidth fullWidth__section--blogs">
-    <div class="fullWidth__blogs--wrapper">
-      <div class="fullWidth__section--blog">
-        <img class="iconBlog" src="<?php echo get_theme_file_uri() ?>/img/blog_icon.svg" height="60" alt="blog icon">
-        <h2>Blog</h2>
-        <p>The culture of an organization is defined by its leadership – even in a volunteer -based organization.  <a href="#">Read more of this story</a></p>
-        <div class="moreBlog">
-          <a href="<?php echo site_url( 'blog-news' ); ?>">Explore more Blog stories </a>
-        </div> <!-- btn btn-events -->
-      </div> <!-- fullWidth__section--blog -->
-
-      <div class="fullWidth__section--news">
-        <img class="iconNews" src="<?php echo get_theme_file_uri() ?>/img/news_icon.svg" height="60" alt="blog icon">
-        <h2>News</h2>
-        <p>The culture of an organization is defined by its leadership – even in a volunteer -based organization. <a href="#">Read more of this news item</a></p>
-        <div class="moreNews">
-          <a href="<?php echo site_url( 'blog-news' ); ?>">Explore more News stories</a>
-        </div> <!-- btn btn-forSale -->
-      </div> <!-- fullWidth__section--news -->
-    </div> <!-- container -->
-  </section>
-  <!-- ============================================== -->
-
 
 <?php get_footer(); ?>
 
