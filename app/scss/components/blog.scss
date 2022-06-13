@@ -3,9 +3,36 @@
   .blog {
 
     &__content {
-      border-bottom: rem(1.5) solid var(--darkBlue);
+      display: flex;
+      flex-direction: column;
       padding-bottom: rem(60);
       margin-bottom: 0;
+      border-bottom: rem(1) solid var(--darkBlue);
+
+      &--single {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: rem(60);
+        border-bottom: rem(1) solid var(--darkBlue);
+
+        @include breakpoint-down(small) {
+          flex-direction: column;
+        }
+      }
+    }
+
+    &__sidebar {
+      flex: 1;
+      padding: rem(20);
+
+      &--profileImage {
+        padding: rem(30);
+      }
+    }
+
+    &__main {
+      flex: 2;
+      padding: rem(20);
     }
 
     &__feature {
@@ -20,7 +47,7 @@
     &__post {
       border-bottom: rem(1) solid var(--darkBlue);
       position: relative;
-      width: 80%;
+      margin: 0 auto;
 
       &:last-child {
         border-bottom: 0;
@@ -33,6 +60,14 @@
 
     &__spacer {
       color: var(--darBlue);
+    }
+
+    &__hero {
+
+      &--image {
+        margin-top: rem(30);
+        border: rem(5) solid var(--darkBlue);
+      }
     }
   }
 
