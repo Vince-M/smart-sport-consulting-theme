@@ -6,7 +6,7 @@
       <div class="hero__headline">
         <img class="hero__logo" src="<?php echo get_theme_file_uri('img/indexHeroLogo_361x93.svg'); ?>" alt="Smart Sport Logo" width="541">
         <div class="btn__hero">
-          <a href="#">About Smart Sport</a>
+          <a href="<?php echo site_url( '/about' ); ?>">About Smart Sport</a>
         </div> <!-- btn__hero -->
       </div> <!-- hero__headline -->
 
