@@ -20,7 +20,18 @@
     <section class="container">
 
       <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-        <header class="blog__header">
+
+
+        <div class="blog__content--single">
+            
+          <aside class="blog__sidebar">
+            <img class="blog__sidebar--profileImage" src="<?php the_field( 'profile-image' ); ?>" alt="">
+          </aside>
+
+          <section class="blog__main">
+            
+
+            <header class="blog__header">
             
             <?php if ( 'post' == get_post_type() ) : ?>
               <?php the_title(); ?>
@@ -34,14 +45,8 @@
             <?php endif; ?>
         </header><!-- .entry-header -->
 
-        <div class="blog__content--single">
-            
-          <aside class="blog__sidebar">
-            <img class="blog__sidebar--profileImage" src="<?php the_field( 'profile-image' ); ?>" alt="">
-          </aside>
+        <img class="blog__hero--image" src="<?php the_field( 'profile-hero' ); ?>" alt="">
 
-          <section class="blog__main">
-            <img class="blog__hero--image" src="<?php the_field( 'profile-hero' ); ?>" alt="">
             <?php the_content(); ?>
           </section>
             

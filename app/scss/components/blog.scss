@@ -21,6 +21,15 @@
       }
     }
 
+    &__header {
+      font-size: 3rem;
+      font-weight: 900;
+      color: var(--white);
+      background-color: var(--darkBlue);
+      margin-top: 2rem;
+      padding: rem(10);
+    }
+
     &__sidebar {
       flex: 1;
       padding: rem(20);
@@ -31,7 +40,7 @@
     }
 
     &__main {
-      flex: 2;
+      flex: 3;
       padding: rem(20);
     }
 
@@ -76,6 +85,8 @@
   }
 
   .post-details {
+    font-size: rem(14);
+    font-weight: 500;
     margin-top: rem(10);
 
     a {

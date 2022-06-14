@@ -16,7 +16,7 @@
     <section class="container">
       <div class="content blog__content">
 
-      <div class="blog__header">
+      <div class="blog__header--head">
         <h1><?php wp_title( '' ); ?></h1>
       </div>
 
