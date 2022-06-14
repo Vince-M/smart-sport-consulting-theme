@@ -66,7 +66,7 @@
   <footer class="footer">
     <div class="container footer__wrapper">
       <div class="footer__identity">
-        <a href="index.html"><img src="<?php echo get_theme_file_uri() ?>/img/smart-sport-rev_131x110.svg" height="110px" alt="Smart Sport reverse logo"></a>
+        <a href="<?php echo site_url(); ?>"><img src="<?php echo get_theme_file_uri() ?>/img/smart-sport-rev_131x110.svg" height="110px" alt="Smart Sport reverse logo"></a>
 
         <?php 
             $args = array(
