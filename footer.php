@@ -3,25 +3,37 @@
     =================================================== -->
     <section class="fullWidth fullWidth__section--blogs">
       <div class="fullWidth__blogs--wrapper">
-        <div class="fullWidth__section--blog">
-          <img class="iconBlog" src="<?php echo get_theme_file_uri() ?>/img/blog_icon.svg" height="60" alt="blog icon">
-          <h2>Blog</h2>
-          <p>The culture of an organization is defined by its leadership – even in a volunteer -based organization.  <a href="#">Read more of this story</a></p>
-          <div class="moreBlog">
-            <a href="<?php echo site_url( 'blog-news' ); ?>">Explore more Blog stories </a>
-          </div> <!-- btn btn-events -->
-        </div> <!-- fullWidth__section--blog -->
+            <?php
+              $args = array(
+                'post_type'  =>  'post',
+                'posts_per_page'  =>  2,
+                'paged'  =>  $paged
+              );
+              
+              $frontpage_posts = new WP_Query($args);
 
-        <div class="fullWidth__section--news">
-          <img class="iconNews" src="<?php echo get_theme_file_uri() ?>/img/news_icon.svg" height="60" alt="blog icon">
-          <h2>News</h2>
-          <p>The culture of an organization is defined by its leadership – even in a volunteer -based organization. <a href="#">Read more of this news item</a></p>
-          <div class="moreNews">
-            <a href="<?php echo site_url( 'blog-news' ); ?>">Explore more News stories</a>
-          </div> <!-- btn btn-forSale -->
-        </div> <!-- fullWidth__section--news -->
-      </div> <!-- container -->
-    </section>
+              wp_reset_postdata();
+            ?>
+
+            <?php if ( $frontpage_posts->have_posts() ): ?>
+
+              <?php while ($frontpage_posts->have_posts() ) : $frontpage_posts->the_post(); ?>
+
+              <div class="fullWidth__section--blog"> 
+
+                <a href="<?php the_permalink(); ?>"><h3 class="fullWidth__section--head" ><?php the_title(); ?></h3></a>
+                <p><?php if ( has_excerpt()) {
+                  echo get_the_excerpt();
+                } else {
+                  echo wp_trim_words( get_the_content(), 18);
+                } ?> </p>
+                <a href="<?php the_permalink(); ?>">Read more of this story</a>
+
+                </div> <!-- fullWidth__section--blog -->
+              <?php endwhile; endif; wp_reset_postdata(); ?>
+
+      </div> <!-- fullWidth__blogs--wrapper -->
+    </section> <!-- fullWidth fullWidth__section--blogs -->
     <!-- ============================================== -->
     
   <!-- SOCIAL MEDIA

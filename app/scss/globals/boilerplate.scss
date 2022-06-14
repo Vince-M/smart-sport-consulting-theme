@@ -233,11 +233,16 @@ a:hover {
     &--blog,
     &--news {
       width: 45%;
-      padding-top: rem(52);
+      padding: rem(52) rem(16);
       margin-bottom: rem(60);
 
+      h3 {
+        padding: 0;
+        text-decoration: none;
+      }
+
       p {
-        margin-bottom: rem(20);
+        margin: rem(8) 0 rem(20)
       }
 
       a {
@@ -255,7 +260,7 @@ a:hover {
     }
 
     &--blog {
-      padding-right: rem(100);
+      padding-right: rem(32);
       position: relative;
 
       @include breakpoint-down(small) {
