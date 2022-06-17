@@ -59,7 +59,11 @@
       margin: 0 auto;
 
       &:last-child {
-        border-bottom: 0;
+        border-bottom: none;
+      }
+
+      h2 {
+        margin-bottom: rem(10);
       }
 
       h2 a {
@@ -77,6 +81,13 @@
         margin-top: rem(30);
         border: rem(5) solid var(--darkBlue);
       }
+    }
+
+    &__pagination {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: rem(20);
     }
   }
 

@@ -168,11 +168,17 @@
       z-index: 999;
       margin: 0 auto;
       border-radius: 0 0 rem(5) rem(5);
+      box-shadow: -5px 8px 10px grey,
+                  5px 8px 10px grey;
 
       @include breakpoint-up(medium) {
-        top: rem(110);
+        top: rem(80);
       }
     }
   }
+}
+
+.current_page_item a {
+  color: var(--darkGold);
 }
 

@@ -85,9 +85,9 @@ img {
  .certification-list {
   list-style-type: disc;
   list-style-position: outside;
-  line-height: 1.5;
+  line-height: 1;
   padding-left: rem(15);
-  margin: rem(16) 0 0 rem(40);
+  margin: rem(16) 0 rem(32) rem(40);
 }
 
 .consult-list li,
@@ -237,8 +237,12 @@ a:hover {
       margin-bottom: rem(60);
 
       h3 {
+        color: var(--white);
         padding: 0;
-        text-decoration: none;
+        
+        a {
+          text-decoration: none;
+        }
       }
 
       p {
@@ -247,7 +251,7 @@ a:hover {
 
       a {
         color: var(--white);
-        text-decoration: underline;
+       
       }
 
       a:hover {
@@ -533,3 +537,4 @@ a:hover {
     text-decoration: underline;
   }
 }
+

@@ -18,20 +18,17 @@ h1 {
   }
 }
 
-h2,
-h3 {
-  color: var(--white);
-  background-color: var(--darkBlue);
-  padding: rem(15) rem(10);
-}
-
 h2 {
+  color: var(--white);
   font-size: rem(40);
-  margin-top: rem(32);
+  background-color: var(--darkBlue);
+  margin: rem(24) 0;
+  padding: rem(15) rem(10);
 }
 
 h3 {
   font-size: rem(36);
+  color: var(--darkBlue);
   margin-top: rem(20);
 
   @include breakpoint-down(small) {
@@ -42,7 +39,8 @@ h3 {
 h4 {
   color: var(--darkBlue);
   font-size: rem(32);
-  margin-top: rem(20);
+  line-height: 1.1;
+  margin-top: rem(36);
 
   @include breakpoint-down(small) {
     font-size: rem(24);
@@ -55,6 +53,15 @@ p {
   font-size: rem(16);
   line-height: 1.5;
   margin-top: rem(24);
+}
+
+.p-rev {
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: rem(16);
+  line-height: 1.5;
+  margin-top: rem(24);
+  margin-bottom: rem(48);
 }
 
 strong {

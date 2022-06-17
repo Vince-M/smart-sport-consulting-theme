@@ -34,7 +34,17 @@
 
         <!-- <hr class="blog__spacer"> -->
 
-        <?php endwhile; else: ?>
+        <?php endwhile; ?>
+
+        <!-- Add the pagination functions here. -->
+        <div class="blog__pagination">
+          <div class="nav-previous alignleft"><?php previous_posts_link( 'Older posts' ); ?></div>
+          <div class="nav-next alignright"><?php next_posts_link( 'Newer posts' ); ?></div>
+        </div> <!-- pagination -->
+        
+        
+
+        <?php else: ?>
 
         <p><?php _e( 'Sorry, no pages found' ); ?></p>
 
@@ -49,6 +59,6 @@
 
 
 
-<?php get_footer( '' ); ?>
+<?php get_footer( 'blog' ); ?>
 
   
