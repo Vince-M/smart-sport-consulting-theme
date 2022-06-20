@@ -11,7 +11,9 @@ h4 {
 h1 {
   color: var(--darkBlue);
   font-size: rem(56);
-  margin-top: rem(35);
+  margin-bottom: rem(35);
+  padding-bottom: rem(8);
+  border-bottom: rem(1) solid var(--darkBlue);
 
   @include breakpoint-down(small) {
     font-size: rem(42);
@@ -19,6 +21,18 @@ h1 {
 }
 
 h2 {
+  color: var(--darkBlue);
+  font-size: rem(40);
+  margin: rem(24) 0;
+  padding: rem(15) 0;
+}
+
+.certification {
+  border-bottom: rem(1) solid var(--darkBlue);
+  padding-bottom: rem(10);
+}
+
+.sub-title h2 {
   color: var(--white);
   font-size: rem(40);
   background-color: var(--darkBlue);
@@ -52,7 +66,7 @@ p {
   font-family: var(--font-body);
   font-size: rem(16);
   line-height: 1.5;
-  margin-top: rem(24);
+  margin-bottom: rem(24);
 }
 
 .p-rev {
@@ -73,4 +87,19 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
+}
+
+ul li {
+  line-height: 1.2;
+}
+
+.left__content {
+
+  &--text {
+    margin-right: rem(24);
+  }
+}
+
+.right-test {
+  margin-left: rem(24);
 }

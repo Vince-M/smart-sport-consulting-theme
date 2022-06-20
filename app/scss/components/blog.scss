@@ -40,7 +40,7 @@
     }
 
     &__main {
-      flex: 3;
+      flex: 4;
       padding: rem(20);
     }
 
@@ -63,11 +63,11 @@
       }
 
       h2 {
-        margin-bottom: rem(10);
+        margin-bottom: 0;
       }
 
       h2 a {
-        color: var(--white);
+        color: var(--darkBlue);
       }
     }
 
@@ -78,7 +78,8 @@
     &__hero {
 
       &--image {
-        margin-top: rem(30);
+        width: 100%;
+        margin: rem(30) 0;
         border: rem(5) solid var(--darkBlue);
       }
     }
@@ -98,7 +99,7 @@
   .post-details {
     font-size: rem(14);
     font-weight: 500;
-    margin-top: rem(10);
+    margin-top: 0;
 
     a {
       color: var(--darkBlue);
