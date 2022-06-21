@@ -121,10 +121,10 @@ img {
 }
 
 .consult-list li,
- .leadership-list li,
- .certification-list li {
-   margin-bottom: rem(14);
- }
+.leadership-list li,
+.certification-list li {
+  margin-bottom: rem(14);
+}
 
 a,
 a:visited,
@@ -191,7 +191,7 @@ a:hover {
       display: flex;
       flex-direction: row;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       
       @include breakpoint-down(medium) {
         width: 100%;
@@ -226,8 +226,6 @@ a:hover {
     &--reverse {
       flex-direction: row-reverse;
     }
-
-
 
     // &--cert {
     //   flex-direction: row-reverse;
@@ -264,7 +262,7 @@ a:hover {
     &--news {
       width: 45%;
       padding: rem(52) rem(16);
-      margin-bottom: rem(60);
+      margin-bottom: rem(32);
 
       h3 {
         color: var(--white);
@@ -444,6 +442,24 @@ a:hover {
   display: none;
 }
 
+/* CTA
+/* -------------------------------------*/
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: rem(3) solid var(--darkBlue);
+  border-bottom: rem(3) solid var(--darkBlue);
+  margin-bottom: rem(40);
+  padding: rem(30) rem(20) rem(64);
+
+  & h4 {
+    margin-bottom: rem(18);
+    text-transform: uppercase;
+  }
+}
 
 /* Icons
 /* -------------------------------------*/
@@ -465,8 +481,6 @@ a:hover {
     right: rem(150);
   }
 }
-
-
 
 
 /* Social Media

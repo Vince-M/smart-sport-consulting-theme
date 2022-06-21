@@ -7,13 +7,13 @@
       flex-direction: column;
       padding-bottom: rem(60);
       margin-bottom: 0;
-      border-bottom: rem(1) solid var(--darkBlue);
+      // border-bottom: rem(1) solid var(--darkBlue);
 
       &--single {
         display: flex;
         flex-direction: row;
         padding-bottom: rem(60);
-        border-bottom: rem(1) solid var(--darkBlue);
+        // border-bottom: rem(1) solid var(--darkBlue);
 
         @include breakpoint-down(small) {
           flex-direction: column;

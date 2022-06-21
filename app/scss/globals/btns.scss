@@ -47,6 +47,22 @@
       }
     }
   }
+
+  &__cta {
+    padding: rem(8) rem(20);
+    background-color: var(--lightBlue);
+    border: rem(1) solid var(--lightBlue);
+    color: var(--white);
+    border-radius: rem(5);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--white);
+      border: rem(1) solid var(--darkBlue);
+      color: var(--darkBlue);
+      transition: color 350ms ease-in-out;
+    }
+  }
 }
 
 .btn__contact.current_page_item a {
