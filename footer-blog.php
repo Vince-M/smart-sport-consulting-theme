@@ -1,5 +1,13 @@
 
     
+  <!-- CTA
+  =================================================== -->
+  <section class="container cta">
+    <h4>Want more information?</h4>
+    <a class="btn__cta" href="<?php echo site_url( '/contact' ); ?>">Contact Us</a>
+  </section>
+  <!-- ============================================== -->
+  
   <!-- SOCIAL MEDIA
   =================================================== -->
   <section class="socialMedia">

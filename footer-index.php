@@ -1,16 +1,7 @@
 
-   <!-- CTA
-    =================================================== -->
-    <section class="container cta">
-      <h4>Find out how we can help you!</h4>
-      <a class="btn__cta" href="<?php echo site_url( '/contact' ); ?>">Contact Us</a>
-    </section>
-    <!-- ============================================== -->
-   
    <!-- NEWS / BLOG
     =================================================== -->
     <section class="fullWidth fullWidth__section--blogs">
-      
       <div class="fullWidth__blogs--wrapper">
             <?php
               $args = array(
@@ -37,13 +28,11 @@
                   echo wp_trim_words( get_the_content(), 18);
                 } ?> </p>
                 <a href="<?php the_permalink(); ?>">Read more of this story</a>
-                
+
                 </div> <!-- fullWidth__section--blog -->
-                
               <?php endwhile; endif; wp_reset_postdata(); ?>
-              
+
       </div> <!-- fullWidth__blogs--wrapper -->
-     
     </section> <!-- fullWidth fullWidth__section--blogs -->
     <!-- ============================================== -->
     
