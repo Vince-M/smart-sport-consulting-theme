@@ -1,5 +1,17 @@
 <?php get_header(); ?>
 
+<?php 
+  $image = get_field( 'profile-hero' );
+  $size = $image['sizes']['large'];
+  $alt = $image['alt'];
+  $title = $image['title'];
+
+  $icon = get_field( 'profile-icon' );
+  $iconSize = $icon['sizes']['large'];
+  $iconAlt = $icon['alt'];
+  $iconTitle = $icon['title'];
+?>
+
   <!-- HERO
   =================================================== -->
   <section class="hero feature-image" role="banner" data-type="background" data-speed="2">
@@ -25,27 +37,26 @@
         <div class="blog__content--single">
             
           <aside class="blog__sidebar">
-            <img class="blog__sidebar--profileImage" src="<?php the_field( 'profile-image' ); ?>" alt="">
+            <img src="<?php echo $iconSize; ?>" class="blog__sidebar--profileImage" alt="<?php echo $iconAlt; ?>" title="<?php echo $iconTitle; ?>" >
           </aside>
 
           <section class="blog__main">
             
-
             <header class="blog__header">
             
-            <?php if ( 'post' == get_post_type() ) : ?>
-              <?php the_title(); ?>
-            <div class="post-details">
-            <i class="fa fa-clock-o"></i> <time><?php echo get_the_date(); ?></time>
-            
-            <i ></i> <?php the_category(', ') ?>
+                <?php if ( 'post' == get_post_type() ) : ?>
+                  <?php the_title(); ?>
 
-            </div><!-- post-details -->
+                <div class="post-details">
+                  <time><?php echo get_the_date(); ?></time>
 
-            <?php endif; ?>
-        </header><!-- .entry-header -->
+                  <?php the_category(', ') ?>
+                </div><!-- post-details -->
 
-        <img class="blog__hero--image" src="<?php the_field( 'profile-hero' ); ?>" alt="">
+                <?php endif; ?>
+            </header><!-- .entry-header -->
+
+            <img src="<?php echo $size; ?>" class="blog__hero--image" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>" >
 
             <?php the_content(); ?>
           </section>
