@@ -33,6 +33,11 @@
     &__sidebar {
       flex: 1;
       padding: rem(20);
+      text-align: center;
+
+      @include breakpoint-down(small) {
+        order: 1;
+      }
 
       &--profileImage {
         padding: rem(30);
@@ -42,6 +47,10 @@
     &__main {
       flex: 4;
       padding: rem(20);
+
+      @include breakpoint-down(small) {
+        order: 2;
+      }
     }
 
     &__feature {

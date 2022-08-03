@@ -48,6 +48,22 @@
     }
   }
 
+  &__back {
+    padding: rem(8) rem(20);
+    background-color: var(--darkBlue);
+    border: rem(1) solid var(--darkBlue);
+    color: var(--white);
+    border-radius: rem(5);
+    cursor: pointer;
+
+    &:hover {
+      background-color: var(--white);
+      border: rem(1) solid var(--darkBlue);
+      color: var(--darkBlue);
+      transition: color 350ms ease-in-out;
+    }
+  }
+
   &__cta {
     padding: rem(8) rem(20);
     background-color: var(--lightBlue);
