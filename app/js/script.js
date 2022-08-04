@@ -7,8 +7,8 @@ const overlay = document.querySelector('.overlay');
 const nav__list = document.querySelector('.nav__list');
 const mobile__fade = document.querySelector('.mobile__fade');
 
-btnHamburger.addEventListener('click', function() {
-  console.log('click hamburger');
+document.querySelector("#btnHamburger").addEventListener("click", function () {
+  console.log("click hamburger");
 
   if(header.classList.contains('open')) { // Close Hamburger Menu
     body.classList.remove('noscroll');

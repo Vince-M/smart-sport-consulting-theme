@@ -28,6 +28,7 @@ function jsTask() {
 // Browsersync
 function browserSyncServe(cb) {
   browsersync.init({
+    browser: 'firefox developer edition',
     proxy: "http://smart-sport-consulting.local/",
     notify: {
       styles: {
