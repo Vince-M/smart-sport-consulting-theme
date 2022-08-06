@@ -19,11 +19,11 @@
       <div class="social social__column">
         <div class="social social__column--left">
           <a class="social__twitter" href="https://www.twitter.com/SmartSportInc/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/img/twitter_icon.svg" width="60px" height="60px" alt="Follow Smart Sport on Twitter"></a>
-          <p>Follow us on Twitter</p>
+          <p><a href="https://www.twitter.com/SmartSportInc/" target="_blank">Follow us on Twitter</a></p>
         </div>
         <div class="social social__column--right">
           <a class="social__instagram" href="https://www.instagram.com/smartsportinc/" target="_blank"><img src="<?php echo get_theme_file_uri(); ?>/img/instagram.svg" width="60px" height="60px" alt="Follow for Inspiring Sports Images"></a>
-          <p>Follow for Inspiring Sports Images</p>
+          <p><a href="https://www.instagram.com/smartsportinc/" target="_blank">Follow for Inspiring Sports Images</a></p>
         </div>
       </div>
     </div>

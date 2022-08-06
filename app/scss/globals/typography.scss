@@ -68,6 +68,15 @@ p {
   margin-bottom: rem(24);
 }
 
+p > a {
+  color: var(--darkBlue);
+  margin-top: 0;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .p-rev {
   color: var(--white);
   font-family: var(--font-body);
