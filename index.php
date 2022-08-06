@@ -3,28 +3,48 @@
   <!-- HERO
   =================================================== -->
   <section class="hero feature-image" role="banner" data-type="background" data-speed="2">
-  <div class="container-fluid">
+  
       <section role="banner" data-type="background" data-speed="2">
-        <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );?>
-        <div class="hero__background" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-position: top; background-size: cover; " >
+      <div class="blog__feature--default hero__background"></div> 
         </div> <!-- hero jumbo-image -->
       </section><!-- .section -->
-    </div> <!-- container-fluid -->
-
   </section> <!-- hero feature-image -->
   <!-- ============================================== -->
 
   <!-- CONTENT
   =================================================== -->
-
     <section class="container">
-      <div class="content">
+      <div class="content blog__content">
+
+      <div class="blog__header--head">
+        <h1><?php wp_title( '' ); ?></h1>
+      </div>
 
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <?php the_content(); ?>
+        <article class="blog__post">
 
-        <?php endwhile; else: ?>
+          <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+          <div class="post-details">
+            <?php echo get_the_date(); ?> &nbsp; / &nbsp; <?php the_category(', ') ?>
+          </div>
+          
+          <p><?php the_excerpt(); ?></p>
+        </article>
+
+        <!-- <hr class="blog__spacer"> -->
+
+        <?php endwhile; ?>
+
+        <!-- Add the pagination functions here. -->
+        <div class="blog__pagination">
+          <div class="nav-previous alignleft"><?php previous_posts_link( 'Older posts' ); ?></div>
+          <div class="nav-next alignright"><?php next_posts_link( 'Newer posts' ); ?></div>
+        </div> <!-- pagination -->
+        
+        
+
+        <?php else: ?>
 
         <p><?php _e( 'Sorry, no pages found' ); ?></p>
 
@@ -38,6 +58,7 @@
   <!-- ============================================== -->
 
 
-<?php get_footer(); ?>
+
+<?php get_footer( 'blog' ); ?>
 
   
