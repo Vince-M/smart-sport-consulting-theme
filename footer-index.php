@@ -2,7 +2,10 @@
    <!-- NEWS / BLOG
     =================================================== -->
     <section class="fullWidth fullWidth__section--blogs">
+      
       <div class="fullWidth__blogs--wrapper">
+        <h3 class="fullWidth__blogs--header">Blogs/News</h3>
+        <div class="fullWidth__blogs--container">
             <?php
               $args = array(
                 'post_type'  =>  'post',
@@ -29,9 +32,12 @@
                 } ?> </p>
                 <a href="<?php the_permalink(); ?>">Read more of this story</a>
 
-                </div> <!-- fullWidth__section--blog -->
-              <?php endwhile; endif; wp_reset_postdata(); ?>
-
+              </div> <!-- fullWidth__section--blog -->
+            <?php endwhile; endif; wp_reset_postdata(); ?>
+        </div>
+        <div class="more-blogs">
+          <p><a href="<?php echo site_url( 'blog-news' ); ?>">More Blogs &raquo;</a></p>
+        </div>
       </div> <!-- fullWidth__blogs--wrapper -->
     </section> <!-- fullWidth fullWidth__section--blogs -->
     <!-- ============================================== -->
