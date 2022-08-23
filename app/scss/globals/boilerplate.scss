@@ -27,7 +27,6 @@ body {
   @include breakpoint-down(medium) {
     width: 100%;
     position: relative;
-    // padding: 0 rem(20) 0 rem(20);
   }
 }
 
@@ -235,7 +234,6 @@ a:hover {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    // height: 400px;
     overflow: hidden;
     position: relative;
     justify-content: flex-start;
@@ -244,10 +242,6 @@ a:hover {
     &--reverse {
       flex-direction: row-reverse;
     }
-
-    // &--cert {
-    //   flex-direction: row-reverse;
-    // }
 
     @include breakpoint-down(small) {
       display: block;
@@ -278,9 +272,7 @@ a:hover {
 
     &--blog,
     &--news {
-      // width: 45%;
       padding: 0 rem(16) rem(32);
-      // margin-bottom: rem(32);
 
       @include breakpoint-down(small) {
         border-bottom: rem(1) solid var(--white);
@@ -348,27 +340,6 @@ a:hover {
         }
     }
 
-    // &--lessons {
-    //   background-image: url('img/index_lessons_960x700-min.jpg');
-    // }
-
-    // &--equine {
-    //   background-image: url('img/index_therapy_960x700-min.jpg');
-    // }
-
-    &--cert {
-      background-image: url('../img/index_certification_960x400-min.jpg');
-    }
-
-
-    &--consult {
-      background-image: url('../img/index_consulting_960x400-min.jpg');
-    }
-
-    &--leader {
-      background-image: url('../img/index_leadership_960x400-min.jpg');
-    }
-
     &--textOuter {
       flex: 1;
       display: flex;
@@ -390,18 +361,6 @@ a:hover {
         color: var(--white);
       }
     }
-
-    // &--equineText,
-    // &--campsText,
-    // &--birthdayText {
-    //   h2 {
-    //     color: $meadow-green;
-    //   }
-
-    //   p {
-    //     color: $meadow-green;
-    //   }
-    // }
 
     &--text {
       width: 80%;
@@ -455,8 +414,6 @@ a:hover {
     left: 50%;
     right: 50%;
     margin: rem(48) -50vw 0 -50vw;
-    // margin-left: -50vw;
-    // margin-right: -50vw;
     background-color: var(--lightBlue);
   }
 }
@@ -507,7 +464,6 @@ a:hover {
 .iconBlog,
 .iconNews {
   position: absolute;
-  // top: rem(60);
 }
 
 .iconBlog {
@@ -595,22 +551,6 @@ a:hover {
         padding-top: rem(16);
       }
     }
-
-    // &--left {
-    //   width: 45%;
-    //   display: flex;
-    //   flex-direction: column;
-    //   text-align: center;
-    // }
-
-    // &--right {
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
-    //   flex-direction: column;
-    //   width: 45%;
-    //   text-align: center;
-    // }
 
     p > a {
       color: var(--darkBlue);

@@ -20,8 +20,6 @@
     flex-direction: column;
     justify-content: space-around;
     padding-top: rem(48);
-    // align-items: center;
-    // margin-top: rem(40);
 
     @include breakpoint-down(small) {
       width: 100%;

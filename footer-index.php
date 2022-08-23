@@ -8,9 +8,9 @@
         <div class="fullWidth__blogs--container">
             <?php
               $args = array(
-                'post_type'  =>  'post',
+                'post_type'       =>  'post',
                 'posts_per_page'  =>  2,
-                'paged'  =>  $paged
+                'paged'           =>  $paged
               );
               
               $frontpage_posts = new WP_Query($args);
@@ -90,21 +90,10 @@
             wp_nav_menu( $args );
           ?>
 
-        <!-- <ul class="footer__menu">
-          <li><a href="">Certification</a></li>
-          <li><a href="">Consulting</a></li>
-          <li><a href="">Leadership</a></li>
-          <li><a href="">Blog/News</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-        </ul> -->
-
       </div>
       <div class="site__info">
-        <!-- <p>© Copyright 2022 Smart Sport Consulting Inc.</p>  -->
         <p>&copy; <?php echo date( 'Y' ); ?> <?php bloginfo( 'name' ); ?></p> 
 
-        <!-- <p><a href="#">Privacy Policy</a></p> -->
         <p><a href="<?php echo site_url( '/privacy-policy' ); ?>">Privacy Policy</a></p>
       </div>
     </div>

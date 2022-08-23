@@ -32,7 +32,6 @@
           <p><?php the_excerpt(); ?></p>
         </article>
 
-        <!-- <hr class="blog__spacer"> -->
 
         <?php endwhile; ?>
 

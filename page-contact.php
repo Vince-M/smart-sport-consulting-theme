@@ -22,16 +22,15 @@
 
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <?php the_content(); ?>
+      <?php the_content(); ?>
 
-        <?php endwhile; else: ?>
+      <?php endwhile; else: ?>
 
-        <p><?php _e( 'Sorry, no pages found' ); ?></p>
+      <p><?php _e( 'Sorry, no pages found' ); ?></p>
 
-        <?php endif; ?>
+      <?php endif; ?>
 
       </div> 
-
     </section> 
 
   
