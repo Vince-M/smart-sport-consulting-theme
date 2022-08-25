@@ -83,19 +83,19 @@
         <a href="<?php echo site_url(); ?>"><img src="<?php echo get_theme_file_uri() ?>/img/smart-sport-rev_131x110.svg" height="110px" alt="Smart Sport reverse logo"></a>
 
         <?php 
-            $args = array(
-              'container'             =>  false,
-              'menu'                  =>  'footer-menu',
-              'container_aria_label'  =>  '',
-              'menu_class'            =>  'footer__menu',
-              'menu_id'               =>  'footer-menu',
-              'echo'                  =>  true,
-              'fallback_cb'           =>  'wp_page_menu',
-              'before'                =>  '',
-              'after'                 =>  '',
-              'depth'                 =>  0
-            );
-            wp_nav_menu( $args );
+        wp_nav_menu(array(
+          'container'             =>  false,
+          'menu'                  =>  'footer-menu',
+          'container_aria_label'  =>  '',
+          'menu_class'            =>  'footer__menu',
+          'menu_id'               =>  'footer-menu',
+          'echo'                  =>  true,
+          'fallback_cb'           =>  'wp_page_menu',
+          'before'                =>  '',
+          'after'                 =>  '',
+          'depth'                 =>  0,
+          'theme_location'        =>  ''
+        ));
           ?>
 
       </div>
