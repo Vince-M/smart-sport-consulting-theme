@@ -35,7 +35,7 @@
             
           <aside class="blog__sidebar">
             <img src="<?php echo $iconSize; ?>" class="blog__sidebar--profileImage" alt="<?php echo $iconAlt; ?>" title="<?php echo $iconTitle; ?>" >
-              <a class="btn__back" href="<?php bloginfo( 'url' ); ?>/blog">Back to Blogs</a>
+              <a class="btn__back" href="<?php echo esc_url( home_url() ) ; ?>/blog">Back to Blogs</a>
           </aside>
 
           <section class="blog__main">

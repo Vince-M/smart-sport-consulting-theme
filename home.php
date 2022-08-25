@@ -46,7 +46,7 @@
 
         <?php else: ?>
 
-        <p><?php _e( 'Sorry, no pages found' ); ?></p>
+          <p>Sorry, no pages found</p>
 
         <?php endif; ?>
 
