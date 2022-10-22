@@ -196,15 +196,16 @@ a:hover {
       @include breakpoint-down(medium) {
         width: 100%;
         position: relative;
-        flex-direction: row;
+        flex-direction: column;
+        padding: 0 5%;
       }
       
     
-      @include breakpoint-down(small) {
-        width: 100%;
-        position: relative;
-        flex-direction: column;
-      }
+      // @include breakpoint-down(small) {
+      //   width: 100%;
+      //   position: relative;
+      //   flex-direction: column;
+      // }
     }
 
     &--header {
@@ -311,7 +312,14 @@ a:hover {
       position: relative;
 
       @include breakpoint-down(small) {
-        padding-right: 0;
+        // padding-right: 0;
+        width: 100%;
+      }
+
+      a,
+      a:active,
+      a:visited {
+        text-decoration: underline;
       }
     }
 
