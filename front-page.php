@@ -22,7 +22,7 @@
     <!-- CERTIFICATION
     =================================================== -->
     <section class="cert full__width fullWidth__section fullWidth__section--certBkgd fullWidth__section--reverse">
-      <div class="fullWidth__section--image fullWidth__section--cert" style="background: url(<?php the_field( 'certification_image' ) ?>) no-repeat; background-position: center top;"></div> 
+      <div class="fullWidth__section--image fullWidth__section--cert" style="background: url(<?php the_field( 'certification_image' ) ?>) no-repeat; background-position: center top; background-size: cover;"></div> 
         <div class="fullWidth__section--textOuter fullWidth__section--textRight">
           <div class="inner-container">
               
@@ -47,7 +47,7 @@
     =================================================== -->
     <section class="consult fullWidth fullWidth__section fullWidth__section--consultBkgd">
       <div class="fullWidth__section--image fullWidth__section--consult" style="background: url(<?php the_field( 'consulting_image' ) ?>) no-repeat;
-      background-position: center top;"></div> 
+      background-position: center top; background-size: cover;"></div> 
       <div class="fullWidth__section--textOuter">
         <div class="inner-container">
           
@@ -70,7 +70,7 @@
     =================================================== -->
     <section class="leader full__width fullWidth__section fullWidth__section--certBkgd fullWidth__section--reverse">
       <div class="fullWidth__section--image fullWidth__section--leader" style="background: url(<?php the_field( 'leadership_image' ) ?>) no-repeat;
-      background-position: center top;"></div>
+      background-position: center top; background-size: cover;"></div>
       <div class="fullWidth__section--textOuter fullWidth__section--textRight">
         <div class="inner-container">
 

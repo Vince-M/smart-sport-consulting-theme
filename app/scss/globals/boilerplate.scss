@@ -371,13 +371,13 @@ a:hover {
     }
 
     &--text {
-      width: 80%;
+      width: 100%;
       padding-left: 3.75rem; // 60px
       text-align: left;
 
       @include breakpoint-down(medium) {
         padding: 0 rem(16) 0;
-        width: 100%;
+        // width: 100%;
       }
 
       @include breakpoint-down(small) {
