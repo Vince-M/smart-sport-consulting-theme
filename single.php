@@ -42,7 +42,7 @@
             <header class="blog__header">
             
                 <?php if ( 'post' == get_post_type() ) : ?>
-                  <?php the_title(); ?>
+                  <h1 class="blogHeading"><?php the_title(); ?></h1>
 
                 <div class="post-details">
                   <time><?php echo get_the_date(); ?></time>
@@ -55,7 +55,10 @@
 
             <img src="<?php echo $size; ?>" class="blog__hero--image" alt="<?php echo $alt; ?>" title="<?php echo $title; ?>" >
 
-            <?php the_content(); ?>
+            <div class="wrapper">
+              <?php the_content(); ?>
+            </div>
+            
           </section>
             
         </div> <!-- blog__content--single -->

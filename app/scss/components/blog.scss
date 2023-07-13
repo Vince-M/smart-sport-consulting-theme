@@ -28,6 +28,8 @@
       padding: rem(10);
     }
 
+
+
     &__sidebar {
       flex: 1;
       padding: rem(20);
@@ -114,3 +116,10 @@
     }
     
   }
+
+  h1.blogHeading {
+      color: var(--white);
+      font-size: rem(60);
+      font-weight: 500;
+      margin-bottom: 0;
+    }
